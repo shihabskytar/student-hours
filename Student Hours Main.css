@@ -1,3 +1,142 @@
+/* -----------------------------------------------
+Blogger Template Style
+Name     :  STUDENT HOURS
+License  :  SHIHABSKYTAR Ltd.
+Version  :  v4.2.9
+Author   :  OMAR FARUK SHIHAB
+----------------------------------------------- */
+
+/*
+<!-- Variable definitions -->
+<Variable name="keycolor" description="Main Color" type="color" default="#EA3C3A" value="#9c27b0"/>
+<Group description="Theme Options">
+    <Variable name="darkmode" description="Native Dark Mode" type="length" default="0px" min="0px" max="1px" value="0px"/>
+    <Variable name="userdarkmode" description="User Dark Mode" type="length" default="1px" min="0px" max="1px" value="1px"/>
+    <Variable name="fixedmenu" description="Fixed Menu" type="length" default="1px" min="0px" max="1px" value="1px"/>
+    <Variable name="sidebar" description="Left Sidebar" type="length" default="0px" min="0px" max="1px" value="0px"/>
+    <Variable name="fixedsidebar" description="Fixed Sidebar" type="length" default="1px" min="0px" max="1px" value="1px"/>
+</Group>
+<Group description="Theme Widths">
+    <Variable name="boxed" description="Boxed Mode" type="length" default="0px" min="0px" max="1px" value="0px"/>
+    <Variable name="row.width" description="Container Width" type="length" default="1058px" min="970px" max="1200px" value="1195px"/>
+    <Variable name="sidebar.width" description="Sidebar Width" type="length" default="300px" min="250px" max="336px" value="336px"/>
+</Group>
+<Group description="Theme Fonts">
+    <Variable name="main.font" description="Site Font" type="font" family="'SolaimanLipi', sans-serif" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
+    <Variable name="menu.font" description="Menu Font" type="font" family="'SolaimanLipi', sans-serif" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
+    <Variable name="title.font" description="Title Font" type="font" family="'SolaimanLipi', sans-serif" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
+    <Variable name="text.font" description="Text Font" type="font" family="'SolaimanLipi', sans-serif" default="normal 400 14px $(family)" value="normal 400 14px $(family)"/>
+</Group>
+<Group description="Background">
+    <Variable name="background.color" description="Body Background" type="color" default="#F1F3F4"  value="#f2f0f3"/>
+    <Variable name="body.background" description="Background" type="background" color="$(background.color)" default="$(color) none repeat fixed top left" value="#840c15 url() repeat fixed top center /* Credit: loops7 () */"/>
+    <Variable name="outer.bg" description="Outer Background" type="color" default="#FFFFFF"  value="#ffffff"/>
+    <Variable name="outer.mobile.bg" description="Outer Mobile Background" type="color" default="#F1F3F4"  value="#f2f0f3"/>
+</Group>
+<Group description="Theme Colors">
+    <Variable name="main.color" description="Theme Color" type="color" default="#EA3C3A" value="#EA3C3A"/>
+    <Variable name="title.color" description="Title Color" type="color" default="#202124" value="#000000"/>
+    <Variable name="title.hover.color" description="Title Hover Color" type="color" default="$(main.color)" value="#EA3C3A"/>
+    <Variable name="meta.color" description="Meta Color" type="color" default="#636466" value="#605d60"/>
+    <Variable name="text.color" description="Text Color" type="color" default="#3C4043"  value="#2c292d"/>
+</Group>
+<Group description="Site Header" selector="#header-wrapper">
+    <Variable name="header.bg" description="Header Background" type="color" default="#FFFFFF" value="#ffffff"/>
+    <Variable name="header.color" description="Header Color" type="color" default="$(title.color)" value="#202124"/>
+    <Variable name="header.hover.color" description="Header Hover Color" type="color" default="$(main.color)" value="#EA3C3A"/>
+</Group>
+<Group description="Sub Menu">
+    <Variable name="submenu.bg" description="Sub Menu Background" type="color" default="#FFFFFF" value="#ffffff"/>
+    <Variable name="submenu.color" description="Sub Menu Color" type="color" default="$(title.color)" value="#202124"/>
+    <Variable name="submenu.hover.color" description="Sub Menu Hover Color" type="color" default="$(main.color)" value="#EA3C3A"/>
+</Group>
+<Group description="Mega Menu">
+    <Variable name="megamenu.bg" description="Mega Menu Background" type="color" default="$(submenu.bg)" value="#FFFFFF"/>
+    <Variable name="megamenu.color" description="Mega Menu Color" type="color" default="$(submenu.color)" value="#202124"/>
+    <Variable name="megamenu.hover.color" description="MegaMenu Hover Color" type="color" default="$(main.color)" value="#EA3C3A"/>
+</Group>
+<Group description="Mobile Menu">
+    <Variable name="mmenu.bg" description="Mobile Menu Background" type="color" default="$(outer.bg)" value="#FFFFFF"/>
+    <Variable name="mmenu.color" description="Mobile Menu Color" type="color" default="$(title.color)" value="#202124"/>
+    <Variable name="mmenu.hover.color" description="Mobile Menu Hover Color" type="color" default="$(main.color)" value="#EA3C3A"/>
+</Group>
+<Group description="Header ADS" selector="#header-ads-wrap">
+    <Variable name="headerad.onpost" description="Show on Post Page" type="length" default="1px" min="0px" max="1px" value="1px"/>
+</Group>
+<Group description="Theme Widgets" select="#sidebar">
+    <Variable name="widget.bg" description="Widget Background" type="color" default="#FFFFFF" value="#ffffff"/>
+    <Variable name="wtitle.color" description="Widget Title Color" type="color" default="$(title.color)" value="#202124"/>
+</Group>
+<Group description="Post Styles" select="#main">
+    <Variable name="post.title.color" description="Post Title Color" type="color" default="$(title.color)" value="#202124"/>
+    <Variable name="post.title.hover.color" description="Post Title Hover Color" type="color" default="$(title.hover.color)" value="#EA3C3A"/>
+    <Variable name="post.text.color" description="Post Page Text Color" type="color" default="$(text.color)" value="#3C4043"/>
+    <Variable name="itempost.title.size" description="Post Page Title Font Size" type="length" default="37px" min="20px" max="50px" value="37px"/>
+    <Variable name="itempost.content.size" description="Post Page Text Font Size" type="length" default="14px" min="12px" max="20px" value="14px"/>
+</Group>
+<Group description="Post Page Options" select="#main">
+    <Variable name="breadcrumb" description="Post Breadcrumbs" type="length" default="1px" min="0px" max="1px" value="1px"/>
+    <Variable name="cmm.count" description="Comments Count" type="length" default="1px" min="0px" max="1px" value="1px"/>
+    <Variable name="postnav" description="Post Navigation" type="length" default="1px" min="0px" max="1px" value="1px"/>
+</Group>
+<Group description="Footer ADS" selector="#footer-ads-wrap">
+    <Variable name="footerad.onpost" description="Show on Post Page" type="length" default="1px" min="0px" max="1px" value="1px"/>
+</Group>
+<Group description="Theme Footer" selector="#footer-wrapper">
+    <Variable name="footer.bg" description="Footer Background" type="color" default="#FFFFFF" value="#ffffff"/>
+    <Variable name="footer.color" description="Footer Color" type="color" default="$(text.color)" value="#3C4043"/>
+    <Variable name="footer.hover.color" description="Footer Hover Color" type="color" default="$(main.color)" value="#EA3C3A"/>
+</Group>
+<Group description="FooterBar" selector=".footerbar">
+    <Variable name="footerbar.bg" description="FooterBar Background" type="color" default="$(footer.bg)" value="#FFFFFF"/>
+    <Variable name="footerbar.color" description="FooterBar Color" type="color" default="$(title.color)" value="#202124"/>
+    <Variable name="footerbar.hover.color" description="FooterBar Hover Color" type="color" default="$(main.color)" value="#EA3C3A"/>
+</Group>
+<Group description="Cookie Consent" selector="#gnews-pro-cookie-ify">
+    <Variable name="cookie.bg" description="Cookie Background" type="color" default="#FFFFFF" value="#ffffff"/>
+    <Variable name="cookie.color" description="Cookie Text Color" type="color" default="$(text.color)" value="#3C4043"/>
+</Group>
+<Group description="Theme Buttons">
+    <Variable name="button.bg" description="Button Background" type="color" default="$(main.color)" value="#EA3C3A"/>
+    <Variable name="button.color" description="Button Color" type="color" default="#FFFFFF" value="#ffffff"/>
+    <Variable name="button.hover.bg" description="Button Hover Background" type="color" default="#1767D0" value="#EA3C3A"/>
+    <Variable name="button.hover.color" description="Button Hover Color" type="color" default="#FFFFFF" value="#ffffff"/>
+</Group>
+<Group description="Theme Fonts (Reset)">
+    <!-- Site Font -->
+    <Variable name="mainfont.italic" description="Main Font Italic" type="font" default="italic 400 14px $(main.font.family)" value="italic 400 14px $(family)"/>
+    <Variable name="mainfont.medium" description="Main Font Medium" type="font" default="normal 500 14px $(main.font.family)" value="normal 500 14px $(family)"/>
+    <Variable name="mainfont.mediumitalic" description="Main Font Medium Italic" type="font" default="italic 500 14px $(main.font.family)" value="italic 500 14px $(family)"/>
+    <Variable name="mainfont.bold" description="Main Font Bold" type="font" default="normal 700 14px $(main.font.family)" value="normal 700 14px $(family)"/>
+    <Variable name="mainfont.bolditalic" description="Main Font Bold Italic" type="font" default="italic 700 14px $(main.font.family)" value="italic 700 14px $(family)"/>
+    <!-- Menu Font -->
+    <Variable name="menufont.italic" description="Menu Font Italic" type="font" default="italic 400 14px $(menu.font.family)" value="italic 400 14px $(family)"/>
+    <Variable name="menufont.sb" description="Menu Font SemiBold" type="font" default="normal 600 14px $(menu.font.family)" value="normal 600 14px $(family)"/>
+    <Variable name="menufont.sbitalic" description="Menu Font SemiBold Italic" type="font" default="italic 600 14px $(menu.font.family)" value="italic 600 14px $(family)"/>
+    <Variable name="menufont.bold" description="Menu Font Bold" type="font" default="normal 700 14px $(menu.font.family)" value="normal 700 14px $(family)"/>
+    <Variable name="menufont.bolditalic" description="Menu Font Bold Italic" type="font" default="italic 700 14px $(menu.font.family)" value="italic 700 14px $(family)"/>
+    <!-- Title Font -->
+    <Variable name="titlefont.italic" description="Title Font Italic" type="font" default="italic 400 14px $(title.font.family)" value="italic 400 14px $(family)"/>
+    <Variable name="titlefont.sb" description="Title Font SemiBold" type="font" default="normal 600 14px $(title.font.family)" value="normal 600 14px $(family)"/>
+    <Variable name="titlefont.sbitalic" description="Title Font SemiBold Italic" type="font" default="italic 600 14px $(title.font.family)" value="italic 600 14px $(family)"/>
+    <Variable name="titlefont.bold" description="Title Font Bold" type="font" default="normal 700 14px $(title.font.family)" value="normal 700 14px $(family)"/>
+    <Variable name="titlefont.bolditalic" description="Title Font Bold Italic" type="font" default="italic 700 14px $(title.font.family)" value="italic 700 14px $(family)"/>
+    <!-- Text Font -->
+    <Variable name="textfont.italic" description="Text Font Italic" type="font" default="italic 400 14px $(text.font.family)" value="italic 400 14px $(family)"/>
+    <Variable name="textfont.medium" description="Text Font Medium" type="font" default="normal 500 14px $(text.font.family)" value="normal 500 14px $(family)"/>
+    <Variable name="textfont.mediumitalic" description="Text Font Medium Italic" type="font" default="italic 500 14px $(text.font.family)" value="italic 500 14px $(family)"/>
+    <Variable name="textfont.bold" description="Text Font Bold" type="font" default="normal 700 14px $(text.font.family)" value="normal 700 14px $(family)"/>
+    <Variable name="textfont.bolditalic" description="Text Font Bold Italic" type="font" default="italic 700 14px $(text.font.family)" value="italic 700 14px $(family)"/>
+</Group>
+<!-- Hidden Variables -->
+<Variable name="body.background.color" description="Comments Background" hideEditor="true" type="color" default="transparent"  value="rgba(0,0,0,0)"/>
+<Variable name="body.title.color" description="Comments Color" hideEditor="true" type="color" default="$(title.color)" value="#202124"/>
+<Variable name="body.text.color" description="Comments Text Color" hideEditor="true" type="color" default="$(text.color)"  value="#3C4043"/>
+<Variable name="body.link.color" description="Comments Link Color" hideEditor="true" type="color" default="$(main.color)"  value="#EA3C3A"/>
+<Variable name="body.text.font" description="Comments Font 1" hideEditor="true" type="font" default="normal 400 14px raleway, Arial, sans-serif !important"  value="normal 400 14px raleway, Arial, sans-serif !important"/>
+<Variable name="body.action.font.large" description="Comments Font 2" hideEditor="true" type="font" default="normal 700 14px raleway, Arial, sans-serif !important"  value="normal 700 14px raleway, Arial, sans-serif !important"/>
+*/
+
 /*-- Google Fonts --*/
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
 @import url('https://fonts.maateen.me/solaiman-lipi/font.css');
