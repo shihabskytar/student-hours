@@ -1,4 +1,4 @@
-//<![CDATA[
+
 var _0x5323b1 = _0x3616,
     _0x6a6fcb = _0x5aff;
 (function(_0x396701, _0x220d88) {
@@ -124,4 +124,3 @@ document[_0x5323b1(0x21a)] = disableEnterKey, document[_0x5323b1(0x1f5)] = disab
 }, document['oncontextmenu'] = nocontext;
 var e = document['getElementsByTagName'](_0x6a6fcb(0x20e))[0x0];
 e && e['setAttribute'](_0x6a6fcb(0x205), on);
-//]]>
