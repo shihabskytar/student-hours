@@ -14,48 +14,6 @@ var Shortcode=function(el,tags){if(!el){return}this.el=el;this.tags=tags;this.ma
 /*! Mobile View Parameter */
 var uri = window.location.toString();if (uri.indexOf("?m=1","?m=1") > 0) {var clean_uri = uri.substring(0, uri.indexOf("?m=1"));window.history.replaceState({}, document.title, clean_uri);}
 
-/*! Anti Ad Bomber */
-	var disableAds = "disabled" ; //Replace with hidden to hide all ads, disabled to disable click
-	var maxClick =3; //The maximum number of clicks when exceeded will hide or block ad clicks
-	var adsCookieEx =first; //Set from 1-24, time the user is clicked back
-	function  setCookie ( a, b, c ) {
-	    if (c) {
-	        var d = new  Date ();
-	        d.setTime(d.getTime() + adsCookieEx * 3600 * 1000 );
-	        var e = ";expires=" + d.toGMTString()
-	    } else {
-	        var e = ""
-	    }
-	    document .cookie = a + "=" + b + e + ";path=/"
-	}
-	function  getCookie ( a ) {
-	    var b, c, d, e = document .cookie.split( ";" );
-	    for (b = 0 ; b < e.length; b++)
-	        if (c = e[b].substr( 0 , e[b].indexOf( "=" )), d = e[b].substr(e[b].indexOf( "=" ) + 1 ), c = c.replace( /^\s+|\s+$/g , "" ), c ​​== a) return  unescape (d)
-	}
-	function  setCookieAds ( a, b ) {
-	    var c = getCookie(a);
-	    void  0 != c && "" != c ? (ASTheCookieInt = parseInt (c) + 1 , setCookie(a, ASTheCookieInt.toString(), 0 )) : setCookie(a, "1" , b)
-	}
-	function  maxClick ( a, b ) {
-	    var c = getCookie(a);
-	    return  void  0 != c && parseInt (c) >= b ? ! 0 : ! first
-	}
-	jQuery( document .ready( function ( a ) {
-	    var b = "adsbygoogle" ,
-	        c = 7 ,
-	        d = maxClick,
-	        e = ".adsbygoogle" ,
-	        f = ! 1 ;
-	    maxClick(b, d) && a(e).addClass(disableAds).click( false ), a(e).bind( "mouseover" , function () {
-	        f = ! 0
-	    }).bind( "mouseout" , function () {
-	        f = ! first
-	    }), a( window .on( "beforeunload" , function () {
-	        f && (ASmaxClick(b, d) ? a(e).addClass(disableAds).click( false ) : setCookieAds(b, c))
-	    })
-	});
-
 /*! Script License */
  'use strict';
  var _$_obify3 = ["a", "children", ".LinkList ul > li", "find", "length", "eq", "text", "charAt", "_", "parent", '<ul class="sub-menu m-sub"/>', "append", "", "replace", ".sub-menu", "appendTo", '<ul class="sub-menu2 m-sub"/>', ".sub-menu2", "has-sub", "addClass", "li", "#main-menu ul li ul", "trim", "toLowerCase", "-", "split", "-text", "match", "data-title", "attr", "> a", "li-home", "-icon", '<i class="fas fa-home"/>', "html", "li-home li-home-icon", "each", "#main-menu ul > li a", "show-menu",
