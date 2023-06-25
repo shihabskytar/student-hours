@@ -11,7 +11,11 @@ var Shortcode=function(el,tags){if(!el){return}this.el=el;this.tags=tags;this.ma
 /*! Lazify by feed.studenthours | v1.0.0 - https://feed.studenthours.xyz */
 !function(a){a.fn.lazyify=function(){return this.each(function(){var t=a(this),src=t.attr('data-src');t.attr('src',src);t.on('load',function(){t.addClass('lazy-ify')})})}}(jQuery);
 
-/* Script License */
+/*! Mobile View Parameter */
+var uri = window.location.toString();if (uri.indexOf("?m=1","?m=1") > 0) {var clean_uri = uri.substring(0, uri.indexOf("?m=1"));window.history.replaceState({}, document.title, clean_uri);}
+
+
+/*! Script License */
  'use strict';
  var _$_obify3 = ["a", "children", ".LinkList ul > li", "find", "length", "eq", "text", "charAt", "_", "parent", '<ul class="sub-menu m-sub"/>', "append", "", "replace", ".sub-menu", "appendTo", '<ul class="sub-menu2 m-sub"/>', ".sub-menu2", "has-sub", "addClass", "li", "#main-menu ul li ul", "trim", "toLowerCase", "-", "split", "-text", "match", "data-title", "attr", "> a", "li-home", "-icon", '<i class="fas fa-home"/>', "html", "li-home li-home-icon", "each", "#main-menu ul > li a", "show-menu",
  "#main-menu .widget", "#main-menu", ".mobile-menu", "clone", "#main-menu-nav", '<div class="submenu-toggle"/>', ".mobile-menu .has-sub", "click", "nav-active", "toggleClass", "body", "fadeToggle", ".overlay", "on", ".slide-menu-toggle", "href", "title", "data", "li.li-home", "getmega", '<div class="getMega">', "</div>", "label", "options", "type", "msimple", "recent", "/search/?&max-results=", "random", "/search/label/", "?&max-results=", "mcarousel", "#", "/", '<ul class="sub-menu m-sub">', '<li><a href="/search/label/',
